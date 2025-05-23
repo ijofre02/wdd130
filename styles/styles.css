@@ -1,5 +1,9 @@
+:root {
+    --headingg-background-color: darkblue;
+
+}
 nav {
-    background-color: darkblue;
+    background-color: var(--headingg-background-color);
     padding: 10px;
 }
 
@@ -10,10 +14,12 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--headingg-background-color);
 }
 
-img {
+/* 0 ptos. Incomplete,The CSS main img rule is missing or incomplete. */
+/* 2 ptos. Complete The CSS img rule was modified to be more specific in selection by using main img { } */
+main img {
     width: 150px;
     height: auto;
     padding: 2px;
@@ -38,8 +44,6 @@ aside {
     text-align: center;
 }
 
-/* 0 ptos. Incomplete,The CSS main img rule is missing or incomplete. */
-/* 2 ptos. Complete The CSS img rule was modified to be more specific in selection by using main img { } */
 aside img {
     width: 200px;
     height: auto;
