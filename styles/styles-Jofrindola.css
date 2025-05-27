@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Setting the universal selector to have a margin and padding of zero (0) will ensure that all elements on the page will have no margin or padding, regardless of the browser defaults. This will make it easier for you to control the page layout.  */
+/* When the border-sizing property is set to the non-default value of border-box, this tells the browser to account for any border and padding in the values you specify for an element's width and height. */
+:root {
+    --headingg-background-color: darkblue;
+    --border: 1px solid rgb(0 0 0 / 0.2);
+    --padding: 1rem;
+
+}
+nav {
+    background-color: var(--headingg-background-color);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--headingg-background-color);
+}
+
+/* 0 ptos. Incomplete,The CSS main img rule is missing or incomplete. */
+/* 2 ptos. Complete The CSS img rule was modified to be more specific in selection by using main img { } */
+main img {
+    width: 150px;
+    height: auto;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+}
+
+p {
+    padding: 0;
+}
+
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 40rem;
+    border: var(--border);
+    text-align: center;
+}
+
+aside img {
+    width: 400px;
+    height: auto;
+}
+
+aside h2{
+    position: relative;
+    top: 47px;
+}
+
+.box {
+    margin: 1rem;
+    border: var(--border);
+    padding: var(--padding);
+    background-color: khaki;
+    color: #000;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/* Class Selectors */
