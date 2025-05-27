@@ -63,15 +63,15 @@ h1 {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     background-color: var(--primary-color);
-    width: 100;
+    width: 90%;
     opacity: 0.8;
     color: #fff;
     text-align: center;
     top: 120px;
-    left: 0;
+    left: 25px;
 }
 
 .hero article img {
