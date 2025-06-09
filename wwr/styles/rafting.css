@@ -1,6 +1,6 @@
 :root{
     --primary-color: #27A1CA;
-    --secondary-color: #0E0D0D;
+    --secondary-color: #000;
     --accent1-color: #594E34;
     --accent2-color: #D7B131;
     --heading-font: "Noto Sans", sans-serif;
@@ -30,7 +30,7 @@ header{
 }
 
 .navegation a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 0.5rem;
     text-decoration: none;
@@ -56,7 +56,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav, p, section, article {
@@ -103,7 +103,7 @@ article {
     max-width: 1000px;
     margin: 0 auto;
     background-color: var(--accent2-color); /* maybe could delete this */
-    color: #fff; /* and this */
+    color: var(--secondary-color); /* and this */
     margin-top: var(--margin-top);
 }
 
