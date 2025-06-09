@@ -76,6 +76,11 @@ nav, p, section, article {
     height: auto;
 }
 
+.hero article img {
+    float: right;
+    width: 100px;
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -98,12 +103,16 @@ article {
     padding: .5px;
 }
 
+.purpose {
+    color: var(--secondary-color);
+}
+
 .history-section {
     padding: 0.5rem;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: var(--accent2-color); /* maybe could delete this */
-    color: var(--secondary-color); /* and this */
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
     margin-top: var(--margin-top);
 }
 
@@ -148,10 +157,6 @@ article {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
-}
-.hero article img {
-    float: right;
-    width: 100px;
 }
 
 footer {
