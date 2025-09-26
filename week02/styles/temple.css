@@ -1,4 +1,50 @@
-header{
-    background-color: dimgrey;
-    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header, footer {
+    background-color: #404040;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    font-size: 1.5em;
+}
+
+main {
+    /* 0 is up and down and auto is left and rigth*/
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+main img {
+    width: 100%; /* respect his parent content (main), and is 300px */
+    box-shadow: 0 0 39px gray;
+}
+
+main section {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 1px solid black;
+}
+
+section p {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 20px;
 }
