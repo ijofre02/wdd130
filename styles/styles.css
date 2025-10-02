@@ -1,61 +1,102 @@
-:root {
-    --main-bg-color: #f0f0f0;
-    --nav-bg-color: darkblue;
-    --nav-text-color: white;
-    --aside-bg-color: #56a5e1;
-    --aside-text-color: black;
-    --footer-bg-color: #000;
-    --footer-text-color: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-main {
-    max-width: 840px;
+/*Setting the universal selector to have a margin and padding of zero (0) will ensure that all elements on the page will have no margin or padding, regardless of the browser defaults. This will make it easier for you to control the page layout.  */
+/* When the border-sizing property is set to the non-default value of border-box, this tells the browser to account for any border and padding in the values you specify for an element's width and height. */
+:root {
+    --headingg-background-color: darkblue;
+    --border: 1px solid rgb(0 0 0 / 0.2);
+    --padding: 1.5rem;
+    --margin: 2rem;
+
 }
 
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 0rem;
+}
+
+aside {
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 nav {
-    background-color: var(--nav-bg-color);
-    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--headingg-background-color);
+    margin: var(--margin);
 }
 
+
 nav a {
-    color: var(--nav-text-color);
+    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 h1 {
-    color: var(--nav-bg-color);
+    color: var(--headingg-background-color);
+    margin: var(--margin);
+    border-bottom: 1px solid #000;
+    text-align: center;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
-}
-
-aside {
-    width: 100%;
-    margin: 0;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    padding: 1rem;
-    background-color:var(--aside-bg-color);
-    color: var(--aside-text-color);
-    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
 }
 
 aside img {
-    width: 200px;
+    width: 17rem;
     height: auto;
 }
 
-footer  {
+aside h2 {
+    position: relative;
+    top: 4rem;
+}
+
+footer {
     margin-top: 15px;
-    border-top: 1px solid #000; /* porque es la rayita de arriba */
+    border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: var(--margin);
+    border: var(--border);
+    padding: var(--padding);
+    background-color: khaki;
+    color: #000;
 }
