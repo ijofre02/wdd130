@@ -3,8 +3,8 @@
     --secondary-color: #000;
     --accent1-color: #594E34;
     --accent2-color: #D7B131;
-    --heading-font: "Noto Sans", sans-serif;
-    --body-font: "Lato", sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: "Arial", "Helvetica", sans-serif;
     --margin-top: 2rem;
 }
 
