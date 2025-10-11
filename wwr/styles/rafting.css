@@ -18,7 +18,7 @@ header{
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
