@@ -49,7 +49,7 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header, main, footer, .employee-pics {
     width: 840px;
     margin: 0 auto;
 }
@@ -176,4 +176,174 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+/* Contact css */
+
+.adress h1, h2 {
+    position: relative;
+    text-align: center;
+    padding: 1px;
+}
+
+.contact {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.employee-pics h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.employee-pics {
+    margin-top: var(--margin-top);
+    background-color: var(--accent2-color);
+    padding: 0.5rem 3rem;
+}
+
+.employee-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.employee-flex img {
+    width: 200px;
+    height: auto;
+}
+
+.employee-flex figcaption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+/* Form */
+
+form {
+    width: 420px;
+    height: 433px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 15px;
+}
+
+
+
+legend {
+    color: var(--secondary-color);
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: "Lato", sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+label[for="feedback"] {
+    text-align: left;
+    display: block;
+
+}
+
+input, select, textarea {
+    padding: 5px;
+    font-size: .5rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    text-align: right;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.midle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.map {
+    max-width: 420px;
+    width: 100%;
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+}
+
+.message input[type="radio"],
+.message input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.message label {
+    display: inline;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.purpose-options {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: center;
+}
+
+.subscribe {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+::placeholder {
+    font-size: 12px;
 }
