@@ -81,7 +81,7 @@ nav, p, section, article {
     width: 100px;
 }
 
-h1 {
+h1, h2 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -230,6 +230,7 @@ form {
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 8px;
     background-color: var(--primary-color);
+    color: #000;
     display: grid;
 }
 
@@ -327,7 +328,6 @@ button:hover {
 .message label {
     display: inline;
     font-size: 0.9rem;
-    color: #000;
 }
 
 .purpose-options {
@@ -346,4 +346,110 @@ button:hover {
 
 ::placeholder {
     font-size: 12px;
+}
+
+/* Home Page */
+
+.hero-button {
+    left: 70%;
+    background-color: var(--accent2-color);
+    color: #383838;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+.hero-button:hover {
+    background-color: #eac857;
+}
+
+.go-trips {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 96%;
+    opacity: 0.8;
+    color: #fff;
+    text-align: center;
+    top: 120px;
+    right: 5%;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.invite {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.discover {
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.discover h2 {
+    margin-bottom: 1rem;
+}
+
+.discover p {
+    font-size: 1rem;
+    color: var(--accent1-color);
+}
+
+.discover-top {
+    margin-bottom: 1rem;
+}
+
+.discover-bottom {
+    margin-top: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.discover-grid .tall {
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+/* a ver, probemos */
+
+.discover-grid figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.discover-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.discover-grid figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.home-form {
+    width: 800px;
+    height: auto;
 }
