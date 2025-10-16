@@ -364,7 +364,7 @@ button:hover {
 
 /* Home Page */
 
-.hero-button {
+.home-button  {
     left: 70%;
     background-color: var(--accent2-color);
     color: var(--secondary-color);
@@ -378,7 +378,7 @@ button:hover {
     margin-bottom: 0.8rem;
 }
 
-.hero-button:hover {
+.home-button:hover {
     background-color: #eac857;
 }
 
