@@ -289,7 +289,7 @@ input[type="checkbox"] {
 }
 
 button {
-    background-color: green;
+    background-color: #045d04;
     color: #fff;
     border: none;
     border-radius: .5rem;
@@ -367,7 +367,7 @@ button:hover {
 .hero-button {
     left: 70%;
     background-color: var(--accent2-color);
-    color: #383838;
+    color: var(--secondary-color);
     padding: 1rem 2rem;
     border-radius: .5rem;
     text-decoration: none;
